@@ -337,6 +337,7 @@ Furthermore, the following attributes are mandatory for every record but may not
 | parent | Reference to the owning ROUTER record
 | linkCount | Number of incoming links connected to the router access
 | role | The role of the listener: inter-router or edge
+| activeTlsOrdinal | The highest TLS ordinal used in a connection
 
 ## Record Lifecycle
 

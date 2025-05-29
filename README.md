@@ -204,6 +204,7 @@ represent record types and record attribute types.
 | 63 | proxyPort | string | proxy port
 | 64 | errorListenerSide | string | Listener side error
 | 65 | errorConnectorSide | string | Connector side error
+| 66 | activeTlsOrdinal | uint | The SSL Profile ordinal field that is currently in operation
 
 ## Attributes per Record Type
 
@@ -255,6 +256,7 @@ Furthermore, the following attributes are mandatory for every record but may not
 | role | The role of the link connection (inter-router, edge)
 | peer | Reference to the connected ROUTER_ACCESS record
 | operStatus | The link's operational status. (up|down)
+| activeTlsOrdinal | The TLS ordinal used to establish the link connection.
 
 ### CONTROLLER
 
@@ -335,6 +337,7 @@ Furthermore, the following attributes are mandatory for every record but may not
 | parent | Reference to the owning ROUTER record
 | linkCount | Number of incoming links connected to the router access
 | role | The role of the listener: inter-router or edge
+| activeTlsOrdinal | The highest TLS ordinal used in a connection
 
 ## Record Lifecycle
 
